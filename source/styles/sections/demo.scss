@@ -1,0 +1,140 @@
+.demo {
+    &__middle{
+        
+        padding: 100px 300px 135px 300px;
+        @media (max-width:950px) {
+            padding: 0px 10px 0px 10px;
+        }
+        background: #ffffff;
+    }
+    &__border {
+        border-bottom: 1px solid #ffc300;
+        width: 29%;
+        margin-left: 36%;
+        margin-bottom:45px;
+
+        &--line {
+            position: relative;
+            
+    
+            &:after {
+                @include centerer-X();
+                content: '';
+                
+               left: 50%;
+                top:50%;
+                width: 35%;
+                height: 5px;
+                background: #ffc301;
+            }
+        }
+        
+    }
+    &__text {
+        text-align: center;
+        &--title {
+            color:#212121;
+            text-transform: uppercase;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        &--description {
+            color:#757575;
+            font-weight: 300;
+            font-size: 1rem;
+        }
+       
+    
+    }
+
+    &__top {
+        position: relative;
+        height: 100px;
+        background: #ffff;
+    
+    &:before {
+        position: absolute;
+        display: block;
+        content: "";
+        top: -29px;
+        left: 0;
+        width: 100%;
+        height: 200%;
+        background: #fff;
+        transform: skew(0, 5deg);
+
+        @media (max-width:950px) {
+            top: -34px;
+            height: 155%;
+        }
+    }
+    &:after {
+        position: absolute;
+        display: block;
+        content: "";
+        top: -17px;
+        right: 0;
+        width: 100%;
+        height: 200%;
+        background: #fff;
+        transform: skew(0, -5deg);
+        @media (max-width:950px) {
+            top: 34px;
+            height: 94%;
+        }
+
+    }}
+    &__bottom {
+        position: relative;
+        height: 100px;
+        background: #ffff;
+        
+    
+    &:before {
+        position: absolute;
+        display: block;
+        content: "";
+        bottom: -28px;
+        left: 0;
+        width: 100%;
+        height: 200%;
+        background: #fff;
+        transform: skew(0, 5deg);
+
+        @media (max-width:950px) {
+        bottom: -35px;
+        height: 91%;
+        }
+    }
+
+    .menu__yellow {
+        display: flex;
+        margin-top: 45px;
+
+    }
+    &:after {
+        position: absolute;
+        display: block;
+        content: "";
+        bottom: 13px;
+        right: 0;
+        width: 100%;
+        height: 200%;
+        background: #fff;
+        transform: skew(0, -5deg);
+
+
+        @media (max-width:950px) {
+        bottom: 32px;
+        height: 40%;
+            }
+    }}
+}
+
+.demo__next{
+
+    background:url("/images/2.jpg") center/cover no-repeat;
+    width: 1500x;
+    height: 600px;
+
+}

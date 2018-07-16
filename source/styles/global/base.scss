@@ -1,0 +1,33 @@
+body {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    background: #fff;
+}
+
+html {
+    box-sizing: border-box;
+
+    @media (max-width:600px) {
+        font-size: 15px;
+    }
+}
+
+*, *:before,*:after {
+    box-sizing: inherit;
+}
+ul,
+li {
+    list-style-type: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.is-hidden {
+    display: none!important;
+}
+.is-visible {
+    display: flex!important;
+}

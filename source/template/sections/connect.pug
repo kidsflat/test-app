@@ -1,0 +1,23 @@
+section.connect 
+        .connect__background
+            .connect__opacity
+                .connect__container
+                    .connect__text
+                        h1.connect__text--title connect with us
+                        .demo__border.demo__border--line 
+                        h2.connect__text--description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    .form
+                        .form__container
+                            form(method="post" action="#")
+                                .form__fields
+                                    input.form__input(type="text" placeholder="Name" data-valid ="required" onkeyup="check();" id="input1")
+                                    input.form__input(type="email" placeholder="Email" data-valid ="required" onkeyup="check();" id="input2" )
+                                    input.form__input(type="tel" placeholder="Phone" data-valid ="required" pattern="^[ 0-9]+$" onkeyup="check();" id="input3")
+                                    textarea.form__input(cols="20", rows="7", placeholder="Message" data-valid ="required" onkeyup="check();" id="input4")
+                                    span#text__send.is-hidden.connect__text--description Sending...
+                                button(type="submit" id="send" disabled="disabled" href="#").form__button.form__button--text.form__button--yellow Send message
+
+
+
+
+                            

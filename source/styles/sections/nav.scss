@@ -1,0 +1,126 @@
+.menu {
+    animation-duration: 1s;
+  animation-name: slideins;
+  animation-direction: alternate;
+    @media (max-width:950px) {
+        display:none;
+        float: right;
+        margin-top: 19px;
+    }
+}
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+
+.menu__link-yellow {
+    font-weight: bold;
+    display: block;
+    font-size: 1.01rem;
+    padding: 11px;
+    color: #212123;
+    text-transform: uppercase;
+    background-color: #fec200;
+    text-decoration: none;
+    &:hover {
+        background: lighten(#fec200,7%);
+    }
+
+    @media (max-width:950px) {
+        font-weight: bold;
+    display: block;
+    font-size: 0.6rem;
+    padding: 3px;
+    
+    }
+
+    @media (max-width:470px) {
+    
+    font-size: 0.345rem;
+    padding: 2px;
+    
+    }
+
+    
+        
+}
+
+.menu__link-gray {
+    font-weight: bold;
+    display: block;
+    font-size: 1.01rem;
+    padding: 11px;
+    color:#fec200 ;
+    text-transform: uppercase;
+    background-color: #212123;
+    text-decoration: none;
+    &:hover {
+        background: lighten(#212123,7%);
+
+    }
+
+    @media (max-width:950px) {
+        font-weight: bold;
+    display: block;
+    font-size: 0.6rem;
+    padding: 3px;
+    color:#fec200 ;
+    text-transform: uppercase;
+    background-color: #212123;
+    text-decoration: none;
+    }
+    @media (max-width:470px) {
+    
+        font-size: 0.345rem;
+        padding: 2px;
+        
+        }
+}
+
+
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 100px;
+    
+    background-color: white;
+    
+    
+}
+ul.submenu > li {
+    margin-top:-2px;
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 7px;
+    color: #ffc602;
+    background-color: #212121;
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    background: lighten(#212121,7%);
+    text-decoration: none;
+    
+}
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+ul.menu__yellow > li:hover > ul.submenu {
+    display: block;
+}
+
+
